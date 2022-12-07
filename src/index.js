@@ -1,13 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import ProgressBar from './components/progress_bar';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <ProgressBar color="green" progress="40"/>
+    <ProgressBar color="blue" progress="60"/>
+    <ProgressBar color="orange" progress="80"/>
+    <ProgressBar color="yellow" progress="100"/>
+    <ProgressBar color="red" progress="20"/>
   </React.StrictMode>
 );
 
